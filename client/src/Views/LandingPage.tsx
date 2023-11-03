@@ -1,4 +1,3 @@
-import Button from "../Ui/Button";
 import InputField from "../Ui/InputField";
 import classes from "./LandingPage.module.css";
 export default function LandingPage() {
@@ -13,7 +12,6 @@ export default function LandingPage() {
         placeholder="your email address"
         width=""
       />
-      <Button />
     </div>
   );
 }

@@ -11,22 +11,28 @@ Button.propTypes = {
 };
 
 interface propTypes {
+  onclick: () => unknown;
   color?: string;
   textcolor?: string;
   lefticon?: ReactNode;
   righticon?: ReactNode;
   width?: string | number;
+  height?: string | number;
+  buttonText: string;
 }
 export default function Button({
+  onclick,
   color,
   lefticon,
   righticon,
   width,
+  height,
   textcolor,
+  buttonText,
 }: propTypes) {
   const styleBtn = {
     width: `${width ? width : "100px"}`,
-    height: "40px",
+    height: `${height ? width : "40px"}`,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -39,7 +45,7 @@ export default function Button({
   return (
     <button style={styleBtn}>
       {lefticon && <div className={classes.iconContainer}>{lefticon}</div>}
-      <div className={classes.btnText}>ButtonText</div>
+      <div className={classes.btnText}>{buttonText}</div>
       {righticon && <div className={classes.iconContainer}>{righticon}</div>}
     </button>
   );
