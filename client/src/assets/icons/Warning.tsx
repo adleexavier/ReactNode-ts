@@ -1,5 +1,4 @@
-import React from "react";
-import { iconPropTypes } from "./ArrowDown";
+import { iconPropTypes } from "./IconPropTypes";
 export default function Warning({ height, width }: iconPropTypes) {
   return (
     <svg

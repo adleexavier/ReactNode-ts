@@ -1,5 +1,4 @@
-import React from "react";
-import { iconPropTypes } from "./ArrowDown";
+import { iconPropTypes } from "./IconPropTypes";
 export default function SearchIcon({ height, width, status }: iconPropTypes) {
   return (
     <svg
