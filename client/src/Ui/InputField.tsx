@@ -4,7 +4,7 @@ import SearchIcon from "../assets/icons/SearchIcon";
 import ArrowDown from "../assets/icons/ArrowDown";
 import Warning from "../assets/icons/Warning";
 interface propTypes {
-  setValue: any;
+  setValue: unknown;
   status: "active" | "inactive" | "error" | "success" | "";
   type: "search" | "dropdown" | "dropdownsearch" | "";
   label: string;
